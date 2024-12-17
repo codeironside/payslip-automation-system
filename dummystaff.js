@@ -73,7 +73,7 @@ const dummyStaff = [
             bankName: "UBA Plc",
             pensionPin: "100032145612",
         },
-        email: "michael.ike@example.com",
+        email: "shabuisrael1@gmail.com",
     },
     {
         name: "AISHA YUSUF",
@@ -122,7 +122,7 @@ const dummyStaff = [
             bankName: "First Bank Nigeria Plc",
             pensionPin: "100056789012",
         },
-        email: "femi.akinloye@example.com",
+        email: "emmashaibu1@gmail.com",
     },
     {
         name: "MARY OLUCHI",
@@ -170,7 +170,7 @@ const dummyStaff = [
             bankName: "Fidelity Bank Plc",
             pensionPin: "100078901234",
         },
-        email: "emmanuel.johnson@example.com",
+        email: "anthonytreasure01@gmail.com",
     },
     {
         name: "HALIMA BELLO",
