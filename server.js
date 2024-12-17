@@ -8,7 +8,7 @@ const app = express()
 
 const port = process.env.PORT || 3232
 
-cron.schedule('*/1 * * * *', () => {
+cron.schedule('0 0 * * *', () => {
     console.log('Running the scheduled payslip email job...');
     sendPayslipEmails();
 });

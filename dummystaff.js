@@ -51,7 +51,7 @@ const dummyStaff = [
         email: "grace.emmanuel@example.com",
     },
     {
-        name: "MICHAEL IKECHUKWU",
+        name: "SHAIBU ISRAEL",
         ippsNumber: "46123",
         grade: "GL12_CONTISS",
         step: "3",
@@ -100,7 +100,7 @@ const dummyStaff = [
         email: "aisha.yusuf@example.com",
     },
     {
-        name: "OLUWAFEMI AKINLOYE",
+        name: "EMMA SHAIBU",
         ippsNumber: "47012",
         grade: "GL14_CONTISS",
         step: "6",
@@ -149,7 +149,7 @@ const dummyStaff = [
         email: "mary.oluchi@example.com",
     },
     {
-        name: "EMMANUEL JOHNSON",
+        name: "ANTHONY TREASURE",
         ippsNumber: "47890",
         grade: "GL11_CONTISS",
         step: "4",
