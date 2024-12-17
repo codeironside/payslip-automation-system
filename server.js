@@ -6,7 +6,7 @@ const { sendPayslipEmails}= require('./payslip')
 
 const app = express()
 
-const port = process.env.port || 4000
+const port = process.env.PORT || 3232
 
 cron.schedule('*/1 * * * *', () => {
     console.log('Running the scheduled payslip email job...');

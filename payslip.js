@@ -70,7 +70,7 @@ const sendPayslipEmails = async () => {
         from: '"HR Department" <your-email@gmail.com>',
         to: staff.email,
         subject: `Monthly Payslip - ${staff.name}`,
-            html: `<!DOCTYPE html>
+        html: `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -81,8 +81,8 @@ const sendPayslipEmails = async () => {
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #F5F5F5;
+      font-family: 'Arial', sans-serif;
+      background-color: #F0F8FF; /* Very light blue background for a calm feel */
       color: #333;
     }
 
@@ -91,87 +91,67 @@ const sendPayslipEmails = async () => {
       width: 90%;
       max-width: 600px;
       margin: 50px auto;
-      background-color: #FFF;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      opacity: 0; /* Initially hidden for animation */
-      animation: fadeIn 1s ease-in forwards;
     }
 
     /* Header Section */
     .payslip-header {
-      background-color: #007BFF;
-      color: #FFF;
+      background-color: #4CA1A3; /* Soft teal for a soothing look */
+      color: #FFFFFF;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 24px;
+      padding: 20px;
+      font-size: 26px;
       font-weight: bold;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     /* Body Section */
     .payslip-body {
-      padding: 30px 20px;
+      padding: 30px 25px;
       text-align: left;
-      line-height: 1.8;
-      animation: slideIn 1s ease-in forwards;
+      line-height: 1.7;
+      background-color: #F9F9F9; /* Light gray background for the body */
     }
 
     .payslip-body h3 {
-      color: #28A745; /* Green for emphasis */
-      font-size: 22px;
+      color: #3E9B5E; /* Soft green to indicate importance */
+      font-size: 24px;
       margin-top: 20px;
-      animation: highlightFade 2s infinite alternate;
+      font-weight: 600;
     }
 
     .payslip-body p {
-      margin: 10px 0;
+      margin: 12px 0;
       font-size: 16px;
+      color: #555; /* Darker text for readability */
     }
 
     /* Footer Section */
     .payslip-footer {
-      background-color: #333;
-      color: #F5F5F5;
+      background-color: #2C3E50; /* Charcoal gray for footer */
+      color: #ECF0F1; /* Light gray text for readability */
       text-align: center;
-      font-size: 12px;
-      padding: 15px;
+      font-size: 14px;
+      padding: 18px;
       letter-spacing: 0.5px;
     }
 
     .payslip-footer b {
-      color: #28A745;
+      color: #F39C12; /* Golden color for emphasis */
     }
 
-    /* Key Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    /* Links for interactive content */
+    .payslip-footer a {
+      color: #3498DB; /* Blue link color */
+      text-decoration: none;
     }
 
-    @keyframes slideIn {
-      from {
-        transform: translateX(-50px);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes highlightFade {
-      from {
-        color: #28A745;
-      }
-      to {
-        color: #007BFF;
-      }
+    .payslip-footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -194,7 +174,8 @@ const sendPayslipEmails = async () => {
     <!-- Footer -->
     <div class="payslip-footer">
       This is an automated email. Please do not reply.<br>
-      <b>National Mathematical Centre</b>
+      <b>National Mathematical Centre</b><br>
+      <a href="#">View Payslip Online</a> | <a href="#">Contact Support</a>
     </div>
   </div>
 
@@ -209,6 +190,7 @@ const sendPayslipEmails = async () => {
   </script>
 </body>
 </html>
+
 
                 `,
         attachments: [
